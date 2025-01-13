@@ -1,14 +1,23 @@
 function findingVowels(givenWord){
+    let count = 0;
     for(i=0; i<givenWord.length; i++){
 
-        if (givenWord[i] == 'A' || 'E' || 'I' || 'O' || 'U' || 'a' || 'e' || 'i' || 'o'|| 'u'){
-            console.log("it has a vowel");
-        }
-        else{
-            console.log("it doesn't have a vowel");
-        }
-    }
+        if (
+            givenWord[i] == 'A' || 
+            givenWord[i] == 'E' || 
+            givenWord[i] == 'I' || 
+            givenWord[i] == 'O' || 
+            givenWord[i] == 'U' || 
+            givenWord[i] == 'a' || 
+            givenWord[i] == 'e' || 
+            givenWord[i] == 'i' || 
+            givenWord[i] == 'o' || 
+            givenWord[i] == 'u'
+          ) 
+          count++;
+          
 }
+return count}
 
-// console.log(findingVowels("rafi"))
-findingVowels("rafi")
+
+console.log(findingVowels("rafi"))

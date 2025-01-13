@@ -1,4 +1,4 @@
-function findingVowels(givenWord){
+const findingVowels = function (givenWord){
     let count = 0;
     for(i=0; i<givenWord.length; i++){
 

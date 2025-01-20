@@ -21,8 +21,23 @@ btn.addEventListener("click", () => {
 
 
 
-const redBox = document.getElementsByClassName('red');
+// const redBox = document.getElementsByClassName('red');
 
-redBox.addEventListener( "mouseover" , () =>{
-    console.log("hiiii")
+// redBox.map.addEventListener( "mouseover" , () =>{
+//     console.log("hiiii")
+// })
+
+// redBox.map( (redBoxChild) => {
+//     redBoxChild.addEventListener('mouseover' , () => {
+//         console.log("hi")
+//     })
+// })
+
+
+const redBox = document.querySelectorAll('.red')
+
+redBox.forEach( redBoxChild => {
+    redBoxChild.addEventListener('mouseover', ()=>{
+        console.log("hi")
+    })
 })

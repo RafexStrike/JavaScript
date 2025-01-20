@@ -17,7 +17,9 @@ const winPatterns = [
 
 boxes.forEach((box) => {
   box.addEventListener("click", () => {
-  
+    if (box.innerText !== "") {
+      return;
+    }
 
     if (player1 === true) {
       box.innerText = "X";

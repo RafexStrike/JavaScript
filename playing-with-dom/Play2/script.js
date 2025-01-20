@@ -18,3 +18,11 @@ btn.addEventListener("click", () => {
         state = "light"
     }
 })
+
+
+
+const redBox = document.getElementsByClassName('red');
+
+redBox.addEventListener( "mouseover" , () =>{
+    console.log("hiiii")
+})
